@@ -1,4 +1,4 @@
-(function() {
+(function () {
   handleAddListener("load", getTiming);
 
   function handleAddListener(type, fn) {
@@ -17,7 +17,7 @@
       var loadTime = (time.loadEventEnd - time.loadEventStart) / 1000;
 
       if (loadTime < 0) {
-        setTimeout(function() {
+        setTimeout(function () {
           getTiming();
         }, 200);
         return;
@@ -54,9 +54,9 @@
     }
   }
 })();
-const DADA = (_ =>
+const DADA = ((_) =>
   [..."`1234567890-=~~QWERTYUIOP[]\\~ASDFGHJKL;'~~ZXCVBNM,./~"].map(
-    x =>
+    (x) =>
       ((o += `/${(b = "_".repeat(
         (w =
           x < y
